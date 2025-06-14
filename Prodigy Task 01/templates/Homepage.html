@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Prediction</title>
+    <style>
+        body {
+            background-image: url("/static/House.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.75);
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        input[type=number], input[type=submit] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+        }
+        input[type=number]::placeholder {
+            color: #aaa;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 500px) {
+            .container {
+                margin: 30px 15px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🏠 House Price Prediction 🏠</h2>
+        <form action="/predict" method="post">
+            <label for="GrLivArea">Ground Living Area (sq ft):</label>
+            <input type="number" name="GrLivArea" placeholder="e.g. 1500" required>
+
+            <label for="BedroomAbvGr">Bedrooms Above Ground:</label>
+            <input type="number" name="BedroomAbvGr" placeholder="e.g. 3" required>
+
+            <label for="FullBath">Full Bathrooms:</label>
+            <input type="number" name="FullBath" placeholder="e.g. 2" required>
+
+            <input type="submit" value="Predict Price">
+        </form>
+    </div>
+</body>
+</html>
