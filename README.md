@@ -6,10 +6,10 @@ The objective of this task was to develop a **simple and interactive web applica
 The backend model was trained on the well-known **Ames Housing Dataset**, utilizing core features that influence residential property prices. The trained model was serialized using **Joblib**, and the application was built with **Python, Flask, and HTML/CSS.**
 
 ## This project strengthened my skills in:
-**- Data preprocessing and model training using Scikit-learn**
-**- Building web applications with Flask**
-**- Deploying ML models into real-time environments**
-**- Creating clean and responsive user interfaces using HTML/CSS**
+- Data preprocessing and model training using Scikit-learn
+- Building web applications with Flask
+- Deploying ML models into real-time environments
+- Creating clean and responsive user interfaces using HTML/CSS
 
 ## 📌 Features
 - Predicts house prices using:
